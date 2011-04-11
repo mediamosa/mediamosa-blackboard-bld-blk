@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <header>
+    <item_count>4</item_count>
+    <item_count_total>4</item_count_total>
+    <item_offset>0</item_offset>
+    <request_process_time>0.0889</request_process_time>
+    <request_query_count>25</request_query_count>
+    <request_result>success</request_result>
+    <request_result_description/>
+    <request_result_id>601</request_result_id>
+    <request_uri>[GET] asset?limit=10&amp;user_id=admin&amp;is_app_admin=true</request_uri>
+    <vpx_version>1.4.3</vpx_version>
+  </header>
+  <items>
+    <asset id="1">
+      <asset_id>9uT3Y8ri1PbbAO22ubQ9hXoO</asset_id>
+      <app_id>105</app_id>
+      <provider_id/>
+      <owner_id>admin</owner_id>
+      <group_id/>
+      <videotimestamp>2009-03-06 10:27:44</videotimestamp>
+      <videotimestampmodified>2009-03-06 10:31:07</videotimestampmodified>
+      <play_restriction_start/>
+      <play_restriction_end/>
+      <locked>FALSE</locked>
+      <reference_id/>
+      <isprivate>FALSE</isprivate>
+      <mediafile_duration/>
+      <mediafile_container_type/>
+      <is_unappropiate>FALSE</is_unappropiate>
+      <is_external>FALSE</is_external>
+      <viewed>34</viewed>
+      <played>23</played>
+      <is_empty_asset>FALSE</is_empty_asset>
+      <is_protected>FALSE</is_protected>
+      <dublin_core>
+        <type/>
+        <format/>
+        <language>nl</language>
+        <title>Peneciline</title>
+        <creator/>
+        <publisher/>
+        <subject>klokhuis, schooltv, medicijn</subject>
+        <description>Aflevering van Klokhuis over peneciline</description>
+        <contributor/>
+        <date/>
+        <identifier/>
+        <source/>
+        <relation/>
+        <coverage_temporal/>
+        <coverage_spatial/>
+        <rights/>
+      </dublin_core>
+      <qualified_dublin_core>
+        <title_alternative/>
+        <description_abstract/>
+        <created/>
+        <issued/>
+        <hasformat/>
+        <isformatof/>
+        <format_medium/>
+        <format_extent/>
+        <license/>
+        <rightsholder/>
+        <isreferencedby/>
+      </qualified_dublin_core>
+      <czp>
+        <schemanaam>http://localhost/wle/</schemanaam>
+        <identificatiecode>http://localhost/wle/?q=asset/9uT3Y8ri1PbbAO22ubQ9hXoO</identificatiecode>
+        <titel/>
+        <taal/>
+        <beschrijving/>
+        <sleutelwoord/>
+        <aggregatieniveau>niveau 2</aggregatieniveau>
+        <versie>opname van uitzendinggemmist.nl</versie>
+        <status>final</status>
+        <soort_leermateriaal>Informatiebron</soort_leermateriaal>
+        <beoogde_eindgebruiker>Leerling/student</beoogde_eindgebruiker>
+        <context>PO</context>
+        <beoogde_leeftijdsgroep>5-10 jaar</beoogde_leeftijdsgroep>
+        <kosten>nee</kosten>
+        <auteursrechten>Ja</auteursrechten>
+        <omschrijving_rechten>SchoolTV / Klokhuis</omschrijving_rechten>
+        <classificatie>classificatie?</classificatie>
+      </czp>
+      <ega_play_url/>
+      <is_favorite>FALSE</is_favorite>
+      <granted>TRUE</granted>
+      <vpx_still_url/>
+    </asset>
+    <asset id="2">
+      <asset_id>a9vfWt4kRVKbCK5OGBNDEmGH</asset_id>
+      <app_id>105</app_id>
+      <provider_id/>
+      <owner_id>admin</owner_id>
+      <group_id/>
+      <videotimestamp>2009-03-06 12:13:06</videotimestamp>
+      <videotimestampmodified>2009-03-06 12:13:24</videotimestampmodified>
+      <play_restriction_start/>
+      <play_restriction_end/>
+      <locked>FALSE</locked>
+      <reference_id/>
+      <isprivate>FALSE</isprivate>
+      <mediafile_duration>00:02:50.8</mediafile_duration>
+      <mediafile_container_type>mp3</mediafile_container_type>
+      <is_unappropiate>FALSE</is_unappropiate>
+      <dublin_core>
+        <type/>
+        <format/>
+        <language>nl</language>
+        <title>Tilly And The Wall - Pot Kettle Black</title>
+        <creator/>
+        <publisher/>
+        <subject>mp3</subject>
+        <description>Tilly And The Wall&#13;
+- Pot Kettle Black&#13;
+- mp3</description>
+        <contributor/>
+        <date/>
+        <identifier/>
+        <source/>
+        <relation/>
+        <coverage_temporal/>
+        <coverage_spatial/>
+        <rights/>
+      </dublin_core>
+      <qualified_dublin_core>
+        <title_alternative/>
+        <description_abstract/>
+        <created/>
+        <issued/>
+        <hasformat/>
+        <isformatof/>
+        <format_medium/>
+        <format_extent/>
+        <license/>
+        <rightsholder/>
+        <isreferencedby/>
+      </qualified_dublin_core>
+      <czp>
+        <schemanaam>http://localhost/wle/</schemanaam>
+        <identificatiecode>http://localhost/wle/?q=asset/a9vfWt4kRVKbCK5OGBNDEmGH</identificatiecode>
+        <titel/>
+        <taal/>
+        <beschrijving/>
+        <sleutelwoord/>
+        <aggregatieniveau>niveau 2</aggregatieniveau>
+        <versie>download</versie>
+        <status>final</status>
+        <soort_leermateriaal>Gesloten opdracht</soort_leermateriaal>
+        <beoogde_eindgebruiker>Auteur</beoogde_eindgebruiker>
+        <context>WO</context>
+        <beoogde_leeftijdsgroep>any</beoogde_leeftijdsgroep>
+        <kosten>nee</kosten>
+        <auteursrechten>Ja</auteursrechten>
+        <omschrijving_rechten>Tilly and The Wall</omschrijving_rechten>
+        <classificatie>?</classificatie>
+      </czp>
+      <ega_play_url/>
+      <is_favorite>FALSE</is_favorite>
+      <granted>TRUE</granted>
+      <vpx_still_url/>
+    </asset>
+    <asset id="3">
+      <asset_id>V2MPUBacvSUx8PH23DnqYXt1</asset_id>
+      <app_id>105</app_id>
+      <provider_id/>
+      <owner_id>admin</owner_id>
+      <group_id/>
+      <videotimestamp>2009-03-06 12:38:04</videotimestamp>
+      <videotimestampmodified>2009-03-13 11:45:48</videotimestampmodified>
+      <play_restriction_start/>
+      <play_restriction_end/>
+      <locked>FALSE</locked>
+      <reference_id/>
+      <isprivate>FALSE</isprivate>
+      <mediafile_duration>00:01:57.6</mediafile_duration>
+      <mediafile_container_type>asf</mediafile_container_type>
+      <is_unappropiate>FALSE</is_unappropiate>
+      <dublin_core>
+        <type/>
+        <format/>
+        <language>nl</language>
+        <title>Super Speedway</title>
+        <creator/>
+        <publisher/>
+        <subject>racecar</subject>
+        <description>WindowsMedia HD showcase</description>
+        <contributor/>
+        <date/>
+        <identifier/>
+        <source/>
+        <relation/>
+        <coverage_temporal/>
+        <coverage_spatial/>
+        <rights/>
+      </dublin_core>
+      <qualified_dublin_core>
+        <title_alternative/>
+        <description_abstract/>
+        <created/>
+        <issued/>
+        <hasformat/>
+        <isformatof/>
+        <format_medium/>
+        <format_extent/>
+        <license/>
+        <rightsholder/>
+        <isreferencedby/>
+      </qualified_dublin_core>
+      <czp>
+        <schemanaam>http://localhost/wle/</schemanaam>
+        <identificatiecode>http://localhost/wle/?q=asset/V2MPUBacvSUx8PH23DnqYXt1</identificatiecode>
+        <titel/>
+        <taal/>
+        <beschrijving/>
+        <sleutelwoord/>
+        <aggregatieniveau>niveau 2</aggregatieniveau>
+        <versie>HD</versie>
+        <status>final</status>
+        <soort_leermateriaal>Gesloten opdracht</soort_leermateriaal>
+        <beoogde_eindgebruiker>Leraar</beoogde_eindgebruiker>
+        <context>PO</context>
+        <beoogde_leeftijdsgroep>any</beoogde_leeftijdsgroep>
+        <kosten>nee</kosten>
+        <auteursrechten>Ja</auteursrechten>
+        <omschrijving_rechten>Microsoft</omschrijving_rechten>
+        <classificatie>~</classificatie>
+      </czp>
+      <ega_play_url/>
+      <is_favorite>FALSE</is_favorite>
+      <granted>TRUE</granted>
+      <vpx_still_url>http://download.pilot.vpcore.snkn.nl/still/XCuWSo0wSKzoIn1ecjWQpYwM</vpx_still_url>
+    </asset>
+    <asset id="4">
+      <asset_id>8XkgLhqIDkAZNE24ddVxabD9</asset_id>
+      <app_id>105</app_id>
+      <provider_id/>
+      <owner_id>admin</owner_id>
+      <group_id/>
+      <videotimestamp>2009-03-06 13:07:00</videotimestamp>
+      <videotimestampmodified>2009-03-06 13:08:02</videotimestampmodified>
+      <play_restriction_start/>
+      <play_restriction_end/>
+      <locked>FALSE</locked>
+      <reference_id/>
+      <isprivate>FALSE</isprivate>
+      <mediafile_duration>00:00:22.4</mediafile_duration>
+      <mediafile_container_type>flv</mediafile_container_type>
+      <is_unappropiate>FALSE</is_unappropiate>
+      <dublin_core>
+        <type/>
+        <format/>
+        <language>nl</language>
+        <title>Fascinatie LEADER</title>
+        <creator/>
+        <publisher/>
+        <subject>uva, wetenschapper</subject>
+        <description>Leader van serie Fascinatie</description>
+        <contributor/>
+        <date/>
+        <identifier/>
+        <source/>
+        <relation/>
+        <coverage_temporal/>
+        <coverage_spatial/>
+        <rights/>
+      </dublin_core>
+      <qualified_dublin_core>
+        <title_alternative/>
+        <description_abstract/>
+        <created/>
+        <issued/>
+        <hasformat/>
+        <isformatof/>
+        <format_medium/>
+        <format_extent/>
+        <license/>
+        <rightsholder/>
+        <isreferencedby/>
+      </qualified_dublin_core>
+      <czp>
+        <schemanaam>http://localhost/wle/</schemanaam>
+        <identificatiecode>http://localhost/wle/?q=asset/8XkgLhqIDkAZNE24ddVxabD9</identificatiecode>
+        <titel/>
+        <taal/>
+        <beschrijving/>
+        <sleutelwoord/>
+        <aggregatieniveau>niveau 2</aggregatieniveau>
+        <versie>final</versie>
+        <status>final</status>
+        <soort_leermateriaal>Informatiebron</soort_leermateriaal>
+        <beoogde_eindgebruiker>Leerling/student</beoogde_eindgebruiker>
+        <context>WO</context>
+        <beoogde_leeftijdsgroep>any</beoogde_leeftijdsgroep>
+        <kosten>nee</kosten>
+        <auteursrechten>Ja</auteursrechten>
+        <omschrijving_rechten>UvA</omschrijving_rechten>
+        <classificatie>lege classificatie</classificatie>
+      </czp>
+      <ega_play_url/>
+      <is_favorite>FALSE</is_favorite>
+      <granted>TRUE</granted>
+      <vpx_still_url>http://download.pilot.vpcore.snkn.nl/still/83zGoGidW6VrKb7Mxh1mWgWr</vpx_still_url>
+    </asset>
+  </items>
+</response>

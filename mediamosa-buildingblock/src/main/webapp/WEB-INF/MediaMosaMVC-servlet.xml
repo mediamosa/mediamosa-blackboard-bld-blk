@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix"><value>/WEB-INF/jsp/</value></property>
+		<property name="suffix"><value>.jsp</value></property>
+	</bean>
+
+	<bean id="playController" class="nl.uva.mediamosa.bb.web.controller.PlayController"/>
+	<bean id="configController" class="nl.uva.mediamosa.bb.web.controller.ConfigController">
+		<property name="formView">
+			<value>config</value>
+		</property>
+		<property name="successView">
+			<value>configSuccess</value>
+		</property>
+	</bean>
+	<bean id="uploadController" class="nl.uva.mediamosa.bb.web.controller.UploadController">
+		<property name="formView">
+			<value>upload</value>
+		</property>
+		<property name="successView">
+			<value>uploadSuccess</value>
+		</property>
+	</bean>		
+	<bean id="browseController" class="nl.uva.mediamosa.bb.web.controller.BrowseController"/>
+	<bean id="browseMenuItemsController" class="nl.uva.mediamosa.bb.web.controller.BrowseMenuItemsController"/>
+	<bean id="searchController" class="nl.uva.mediamosa.bb.web.controller.SearchController">
+		<property name="formView">
+			<value>search</value>
+		</property>
+		<property name="successView">
+			<value>search</value>
+		</property>
+	</bean>
+	<bean id="editController" class="nl.uva.mediamosa.bb.web.controller.EditController">
+		<property name="formView">
+			<value>edit</value>
+		</property>
+		<property name="successView">
+			<value>editSuccess</value>
+		</property>
+	</bean>
+	<bean id="modifyController" class="nl.uva.mediamosa.bb.web.controller.ModifyController">
+		<property name="formView">
+			<value>modify</value>
+		</property>
+		<property name="successView">
+			<value>modifySuccess</value>
+		</property>
+	</bean>
+	<bean id="createController" class="nl.uva.mediamosa.bb.web.controller.CreateController">
+		<property name="formView">
+			<value>create</value>
+		</property>
+		<property name="successView">
+			<value>createSuccess</value>
+		</property>
+	</bean>
+	<bean id="manageAssetController" class="nl.uva.mediamosa.bb.web.controller.ManageAssetController">
+		<property name="methodNameResolver">
+			<ref bean="methodNameResolver"/>
+		</property>	
+	</bean>
+	
+	<bean id="methodNameResolver" class="org.springframework.web.servlet.mvc.multiaction.ParameterMethodNameResolver">
+		<property name="paramName">
+			<value>action</value>
+		</property>
+	</bean>
+		
+	<bean id="simpleUrlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<prop key="/play.htm">playController</prop>
+				<prop key="/admin/config.htm">configController</prop>
+				<prop key="/upload.htm">uploadController</prop>
+				<prop key="/browse.htm">browseController</prop>
+				<prop key="/browseMenuItems.htm">browseMenuItemsController</prop>
+				<prop key="/search.htm">searchController</prop>
+				<prop key="/manageAssets.htm">manageAssetController</prop>
+				<prop key="/edit.htm">editController</prop>
+				<prop key="/modify.htm">modifyController</prop>
+				<prop key="/create.htm">createController</prop>
+			</props>
+		</property>
+	</bean>
+				
+</beans>

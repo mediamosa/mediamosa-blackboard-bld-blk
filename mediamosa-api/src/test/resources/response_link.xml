@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<response>
+	<header>
+		<item_count>1</item_count>
+		<request_process_time>0.0415</request_process_time>
+		<request_query_count>40</request_query_count>
+		<request_result>success</request_result>
+		<request_result_description>
+    </request_result_description>
+		<request_result_id>601</request_result_id>
+		<request_uri>[GET] asset/V2MPUBacvSUx8PH23DnqYXt1/play?mediafile_id=CoQk2UDRcffpwvTxHZU06Vpu&amp;user_id=admin&amp;user_id=admin&amp;is_app_admin=true</request_uri>
+		<vpx_version>1.4.3</vpx_version>
+	</header>
+	<items>
+		<item id="1">
+			<output>mms://wms.acceptatie.streaming.kennisnet.nl/vpcore-pilot/SOQQ10G1G20SgYYVsdWFe0Jb</output>
+			<content_type>
+      </content_type>
+		</item>
+	</items>
+</response>

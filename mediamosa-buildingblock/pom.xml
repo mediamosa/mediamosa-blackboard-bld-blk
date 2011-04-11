@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <name>bb-bld-blk-mediamosa</name>
+  <description>Blackboard Building Block for MediaMosa</description>
+  <groupId>nl.uva.ic</groupId>
+  <artifactId>bb-bld-blk-mediamosa</artifactId>
+  <version>2.0.0-SNAPSHOT</version>
+
+  <organization>
+    <name>Universiteit van Amsterdam</name>
+    <url>http://www.uva.nl</url>
+  </organization>
+  <inceptionYear>2009</inceptionYear>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution />
+    </license>
+  </licenses>
+  <packaging>war</packaging>
+  
+    <properties>
+        <findbugs.version>2.0.1</findbugs.version>
+        <jdk.version>1.6</jdk.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+  <scm>
+    <developerConnection>scm:svn:https://source.ic.uva.nl/repos/svn/odg-1/blackboard-vpcore/trunk</developerConnection>
+  </scm>
+	<distributionManagement>
+		<repository>
+			<id>bob.ic.uva.nl-releases</id>
+			<name>bob.ic.uva.nl-releases</name>
+			<url>http://bob.ic.uva.nl/artifactory/libs-releases-local</url>
+		</repository>
+	</distributionManagement>
+  <repositories>
+  	<repository>
+  		<id>odg</id>
+  		<url>http://bob.ic.uva.nl/artifactory/repo</url>
+  	</repository>
+  </repositories>
+
+  <dependencies>
+
+    <!-- **************************************************** -->
+    <!-- Blackboard Academic Suite -->
+    <dependency>
+      <groupId>blackboard</groupId>
+      <artifactId>bb-cms-admin</artifactId>
+      <version>9.1</version>
+      <scope>provided</scope>
+    </dependency>
+    
+    <dependency>
+      <groupId>blackboard</groupId>
+      <artifactId>bb-platform</artifactId>
+      <version>9.1</version>
+      <scope>provided</scope>
+    </dependency>
+    
+    <dependency>
+      <groupId>blackboard</groupId>
+      <artifactId>bb-taglibs</artifactId>
+      <version>9.1</version>
+      <scope>provided</scope>
+    </dependency>
+    
+    <dependency>
+    	<groupId>blackboard</groupId>
+    	<artifactId>bb-ui-webapi</artifactId>
+    	<version>9.1</version>
+    	<!--<scope>provided</scope> -->
+    	<!-- 
+    		Setting scope to 'provided'	breaks stuff in bb9.1
+    		Resulting in java.lang.NoClassDefFoundError: blackboard/platform/ui/struts/dynamiccontextmenu/BaseContextMenuGenerator
+			Turns out bb-ui-webapi.jar is not available in classpath for building blocks
+			bb-ui-webapi.jar is not in /app/blackboard/apps/tomcat/lib 
+    	 -->
+    </dependency>
+   
+    <dependency>
+    	<groupId>servletapi</groupId>
+    	<artifactId>servletapi</artifactId>
+    	<version>2.4</version>
+    	<scope>provided</scope>
+    </dependency>
+    
+	<dependency>
+		<groupId>apache-taglibs</groupId>
+		<artifactId>jstl</artifactId>
+		<version>1.1.2</version>
+		<scope>provided</scope>
+	</dependency>
+	
+	<dependency>
+		<groupId>apache-taglibs</groupId>
+		<artifactId>standard</artifactId>
+		<version>1.1.2</version>
+		<scope>provided</scope>
+	</dependency>
+    
+    <dependency>
+       	<groupId>mediamosa</groupId>
+       	<artifactId>mediamosa-api</artifactId>
+       	<version>0.0.3</version>
+       	<!-- <scope>runtime</scope>  -->
+      <type>jar</type>
+    </dependency>
+
+    <dependency>
+    	<groupId>commons-configuration</groupId>
+    	<artifactId>commons-configuration</artifactId>
+    	<version>1.6</version>
+    </dependency>
+
+	<dependency>
+		<groupId>com.whirlycott</groupId>
+		<artifactId>whirlycache</artifactId>
+		<version>1.0.1</version>
+		<exclusions>
+      		<exclusion>
+      			<groupId>commons-logging</groupId>
+      			<artifactId>commons-logging</artifactId>
+      		</exclusion>
+	    </exclusions>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-webmvc</artifactId>
+		<version>2.5.6</version>
+	</dependency>
+		
+	<dependency>
+  		<groupId>struts</groupId>
+  		<artifactId>struts</artifactId>
+  		<version>1.2.9</version>
+  		<scope>compile</scope>
+	</dependency>
+	
+ 	<dependency>
+ 		<groupId>net.sf.json-lib</groupId>
+ 		<artifactId>json-lib</artifactId>
+ 		<version>2.2.3</version>
+ 		<classifier>jdk15</classifier>
+ 		<scope>provided</scope>
+ 	</dependency>
+	
+	<!-- **************************************************** -->
+
+    <!-- **************************************************** -->
+    <!-- External dependencies -->
+ 	<dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.4</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- **************************************************** -->
+
+  </dependencies>
+
+  <build>
+    <testSourceDirectory>src/test/java</testSourceDirectory>
+    <plugins>
+      <plugin>
+        <inherited>true</inherited>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.4</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <configuration>
+          <webResources>
+            <webResource>
+              <directory>src/main/webapp</directory>
+              <includes>
+              	<include>index.jsp</include>
+              </includes>
+              <filtering>true</filtering>
+            </webResource>
+          </webResources>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>2.2-beta-5</version>
+        <configuration>
+          <descriptors>
+            <descriptor>src/assemble/distribution.xml</descriptor>
+          </descriptors>
+        </configuration>
+      </plugin>
+      <plugin>
+      	<groupId>com.blackboard</groupId>
+      	<artifactId>maven-bb-version-plugin</artifactId>
+      	<version>1.0.1</version>
+		<configuration>
+			<manifestFile>src/main/webapp/WEB-INF/bb-manifest.xml</manifestFile>
+			<version>${project.version}</version>
+		</configuration>
+      </plugin>
+    </plugins>
+  </build>
+            <reporting>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>jdepend-maven-plugin</artifactId>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>findbugs-maven-plugin</artifactId>
+                        <version>${findbugs.version}</version>
+                        <configuration>
+                            <findbugsXmlOutput>true</findbugsXmlOutput>
+                            <findbugsXmlWithMessages>true</findbugsXmlWithMessages>
+                            <xmlOutput>true</xmlOutput>
+                            <effort>Max</effort>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <artifactId>maven-pmd-plugin</artifactId>
+                        <configuration>
+                            <includeTests>false</includeTests>
+                    <minimumPriority>4</minimumPriority>
+                            <linkXref>true</linkXref>
+                            <rulesets>
+                                <ruleset>${basedir}/pmd-ruleset.xml</ruleset>
+                            </rulesets>
+                            <targetJdk>${jdk.version}</targetJdk>
+                            <minimumTokens>100</minimumTokens><!-- 5 to 10 duplicate lines -->
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <artifactId>maven-jxr-plugin</artifactId>
+                    </plugin>
+                    <plugin>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                    </plugin>
+                    <plugin>
+                        <artifactId>maven-changelog-plugin</artifactId>
+                        <configuration><connectionType>developerConnection</connectionType>
+                            <displayFileDetailUrl>https://source.ic.uva.nl/viewvc/odg-1/%FILE%?view=log</displayFileDetailUrl>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <artifactId>maven-project-info-reports-plugin</artifactId>
+                        <reportSets>
+                            <reportSet>
+                                <reports>
+                                    <report>index</report>
+                                    <report>dependencies</report>
+                                    <report>project-team</report>
+                                    <report>cim</report>
+                                    <report>scm</report>
+                                </reports>
+                            </reportSet>
+                        </reportSets>
+                    </plugin>
+                </plugins>
+            </reporting>
+
+</project>
+

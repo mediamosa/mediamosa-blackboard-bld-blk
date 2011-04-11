@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jxb:bindings version="1.0" xmlns:jxb="http://java.sun.com/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<jxb:bindings schemaLocation="mediamosa.xsd" node="/xs:schema">		
+		<jxb:schemaBindings>
+			<jxb:package name="nl.uva.mediamosa.model">
+				<jxb:javadoc>
+				   <![CDATA[<body>
+				   This package contains JAXB generated classes which represent XML responses to MediaMosa webservice requests.<br/>
+				   For an overview of requests and their responses see <a href="http://mediamosa.org/api">http://mediamosa.org/api</a></body>]]>
+				</jxb:javadoc>
+			</jxb:package>
+		</jxb:schemaBindings>
+		<!-- set to 'false' to generate Impl classes --> 
+		<jxb:globalBindings generateValueClass="true">
+			<jxb:javaType name="java.util.Calendar" xmlType="xs:dateTime" 
+				parseMethod="nl.uva.mediamosa.util.DataTypeConverterUtil.parseDateTime"
+				printMethod="nl.uva.mediamosa.util.DataTypeConverterUtil.printDateTime"/>
+		</jxb:globalBindings>
+		<jxb:bindings node="//xs:complexType[@name='StatsDatausagevideoType']/xs:sequence/xs:element[@name='type']/xs:simpleType">
+			<jxb:typesafeEnumClass name="TypeType"/>
+		</jxb:bindings>
+	</jxb:bindings>
+</jxb:bindings>

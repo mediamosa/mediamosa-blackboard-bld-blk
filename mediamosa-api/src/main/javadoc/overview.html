@@ -1,0 +1,83 @@
+<!--
+
+    MediaMosa API
+
+    A partial implementation of the MediaMosa API in Java.
+
+    Copyright 2010 Universiteit van Amsterdam
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+
+<body>
+This API is a partial implementation of the MediaMosa API in Java.<br/>
+You will need access to a MediaMosa installation. For instructions to setup MediaMosa please go to <a href="http://mediamosa.org">http://mediamosa.org</a><br/>
+<br/>
+To start using the service create an instance and provide necessary details:<br/>
+<br/>
+<code>
+MediaMosaService service = new MediaMosaService("http://YOURSERVER");<br/>
+service.setCredentials("USERNAME", "PASSWORD");<br/>
+<br/>
+// retrieve assets<br/>
+List&lt;AssetType&gt; assetList = service.getAssets();<br/>
+<br/>
+// get first asset<br/>
+AssetType asset = assetList.get(0);<br/>
+<br/>
+// get asset details wich include underlying mediafiles<br/>
+AssetDetailsType assetDetails = service.getAssetDetails(assetId);<br/>
+</code>
+<br/>
+To upload a video to the MediaMosa platform:<br/>
+<br/>
+<code>
+MediaMosaService service = new MediaMosaService("http://YOURSERVER");<br/>
+service.setCredentials("USERNAME", "PASSWORD");<br/>
+<br/>
+// set the owner of the asset<br/>
+String userId = "someuser";<br/>
+assetId = service.createAsset(userId);<br/>
+String mediafileId = service.createMediafile(assetId, userId);<br/>
+
+// request an uploadticket
+UploadTicketType uploadTicket = service.createUploadTicket(mediafileId, userId);<br/>
+String uploadUrl = uploadTicket.getAction();<br/>
+</code>
+<br/>
+Create a HTML form to upload your video file. Set the 'action' parameter to 'uploadUrl'.<br/>
+<br/>
+To play a video from the MediaMosa platform:<br/>
+<br/>
+<code>
+MediaMosaService service = new MediaMosaService("http://YOURSERVER");<br/>
+service.setCredentials("USERNAME", "PASSWORD");<br/>
+<br/>
+// required assetId to retreive details of asset (which contain the actual mediafiles)<br/>
+AssetDetailsType assetDetails = service.getAssetDetails(assetId);<br/>
+// required mediafileId obtained from first mediafile(uploaded file)<br/> 
+MediafileDetailsType mediafileDetails = assetDetails.getMediafiles().getMediafile().get(0);<br/>
+// request link to play video<br/>
+LinkType link = service.getPlayLink(assetId, mediafileDetails.getMediafileId(), "someuser");<br/>
+<br/>
+or<br/>
+<br/>
+// request embedcode<br/>
+LinkType embedLink = service.getPlayLink(assetId, mediafileDetails.getMediafileId(), "soomeuser", "object");<br/>
+// obtain actual link or embedcode<br/> 
+embedLink.getOutput();
+</code>
+<br/>
+
+</body>

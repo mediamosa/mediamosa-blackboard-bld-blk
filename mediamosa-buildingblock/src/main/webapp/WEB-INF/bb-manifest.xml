@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://www.blackboard.com/buildingblocks/bb7-manifest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blackboard.com/buildingblocks/bb7-manifest bb7-manifest.xsd ">
+    <plugin>
+      <name value="MediaMosa"/>
+      <handle value="BB-MEDIAMOSA"/>
+      <description value="MediaMosa Building Block"/>
+	  <version value="2.0.0"/>
+	  <requires>
+ 	    <bbversion value="9.1.0"/>
+	  </requires>
+	  <vendor>
+	    <id value="UVA"/>
+	    <name value="Universiteit van Amsterdam"/>
+	    <url value="http://www.uva.nl/"/>
+	    <description value="Universiteit van Amsterdam"/>
+	  </vendor>
+	  <http-actions>
+		<config value="admin/config.jsp"/>
+	  </http-actions>
+	  <content-handlers>
+	    <content-handler>
+	      <name value="MediaMosa Streaming"/>
+	      <handle value="resource/x-bb-mediamosa"/>
+	      <http-actions>
+	        <create value="browse.htm"/>
+	        <modify value="modify.htm"/>
+	      </http-actions>
+	      <icons>
+	        <toolbar value="images/mediamosa.png"/>
+	        <listitem value="images/mediamosa.png"/>
+	      </icons>
+	    </content-handler>
+	  </content-handlers>
+	  <application-defs>
+	    <application handle="BBMM" type="course_tool" name="MediaMosa tool">
+	    <description lang="en_US">
+ 		  Manage your media content on a MediaMosa platform. 
+ 		  This tool lets you play, upload, edit and search media.
+  		</description>
+	    <links>
+	      <link>
+	        <type value="course_tool"/>
+	        <name value="MediaMosa"/>
+	        <url value="browse.htm"/>
+	        <description value="MediaMosa starting point."/>
+          </link>
+	    </links>
+	  </application>
+	</application-defs>
+	<permissions>
+	  <permission type="attribute" name="user.personalinfo" actions="get"/>
+	  <permission type="attribute" name="user.authinfo" actions="get"/>
+	  <permission type="persist" name="Content" actions="create,modify,delete"/>
+	  <permission type="socket" name="*" actions="connect,resolve"/>
+	  <permission type="runtime" name="accessDeclaredMembers"/>
+	  <permission type="runtime" name="getClassLoader"/>
+	  <permission type="runtime" name="createClassLoader"/>
+	  <permission type="java.lang.reflect.ReflectPermission" name="suppressAccessChecks" actions=""/>
+	  <permission type="java.lang.reflect.ReflectPermission" name="accessDeclaredMembers" actions=""/>
+	  <permission type="java.lang.RuntimePermission" name="accessDeclaredMembers" actions=""/>
+	  <permission type="java.lang.RuntimePermission" name="accessClassInPackage.org.apache.catalina.connector" actions=""/>
+	  <permission type="attribute" name="Group" actions="get"/>
+	  <permission type="attribute" name="GroupMembership" actions="get"/>
+	</permissions>
+  </plugin>
+</manifest>

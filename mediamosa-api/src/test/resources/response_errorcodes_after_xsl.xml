@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <header>
+    <item_count>135</item_count>
+    <request_process_time>0.0037</request_process_time>
+    <request_query_count>8</request_query_count>
+    <request_result>success</request_result>
+    <request_result_description/>
+    <request_result_id>601</request_result_id>
+    <request_uri>[GET] errorcodes</request_uri>
+    <vpx_version>1.4.3</vpx_version>
+  </header>
+  <items>
+    <errorcode id="1">
+      <version>0</version>
+      <name>HTTP_OK</name>
+      <code>200</code>
+      <message/>
+    </errorcode>
+    <errorcode id="2">
+      <version>0</version>
+      <name>HTTP_CREATED</name>
+      <code>201</code>
+      <message/>
+    </errorcode>
+    <errorcode id="3">
+      <version>0</version>
+      <name>HTTP_NO_CONTENT</name>
+      <code>204</code>
+      <message/>
+    </errorcode>
+    <errorcode id="4">
+      <version>0</version>
+      <name>HTTP_UNAUTHORIZED</name>
+      <code>401</code>
+      <message/>
+    </errorcode>
+    <errorcode id="5">
+      <version>0</version>
+      <name>HTTP_FORBIDDEN</name>
+      <code>403</code>
+      <message/>
+    </errorcode>
+    <errorcode id="6">
+      <version>0</version>
+      <name>HTTP_NOT_FOUND</name>
+      <code>404</code>
+      <message>Page not found</message>
+    </errorcode>
+    <errorcode id="7">
+      <version>0</version>
+      <name>ERRORCODE_OKAY</name>
+      <code>601</code>
+      <message/>
+    </errorcode>
+    <errorcode id="8">
+      <version>0</version>
+      <name>ERRORCODE_TIME_RESTRICTION_START</name>
+      <code>602</code>
+      <message>PP - time_restriction_start error: @date (@timestamp)</message>
+    </errorcode>
+    <errorcode id="9">
+      <version>0</version>
+      <name>ERRORCODE_TIME_RESTRICTION_END</name>
+      <code>603</code>
+      <message>PP - time_restriction_end error: @date (@timestamp)</message>
+    </errorcode>
+    <errorcode id="10">
+      <version>0</version>
+      <name>ERRORCODE_FILE_NOT_FOUND</name>
+      <code>604</code>
+      <message>PP - @filename doesn't exist!</message>
+    </errorcode>
+    <errorcode id="11">
+      <version>0</version>
+      <name>ERRORCODE_DIR_NOT_FOUND</name>
+      <code>605</code>
+      <message>PP - ticket store location doesn't exist! (@location)</message>
+    </errorcode>
+    <errorcode id="12">
+      <version>0</version>
+      <name>ERRORCODE_DIR_NOT_WRITABLE</name>
+      <code>606</code>
+      <message>PP - unable to create ticket in @location</message>
+    </errorcode>
+    <errorcode id="13">
+      <version>0</version>
+      <name>ERRORCODE_STREAMING_PROFILE_NOT_FOUND</name>
+      <code>607</code>
+      <message>PP - There was no streaming server profile found for the video container used in this mediafile. (video container: '@video_container')</message>
+    </errorcode>
+    <errorcode id="14">
+      <version>1</version>
+      <name>ERRORCODE_NO_MEDIAFILE_FOUND_FOR_PROFILE_ID</name>
+      <code>608</code>
+      <message>PP - For the given asset and profile_id no mediafile was found.</message>
+    </errorcode>
+    <errorcode id="15">
+      <version>0</version>
+      <name>ERRORCODE_QUERY_ERROR</name>
+      <code>609</code>
+      <message>Incorrect database query</message>
+    </errorcode>
+    <errorcode id="16">
+      <version>0</version>
+      <name>STREAM_DOWNLOAD_NOT_ALLOWED</name>
+      <code>610</code>
+      <message>Download not allowed for external streams</message>
+    </errorcode>
+    <errorcode id="17">
+      <version>0</version>
+      <name>ERRORCODE_NO_METAFILE_AVAILABLE</name>
+      <code>611</code>
+      <message>This container type doesn't support metafiles (@container_type)</message>
+    </errorcode>
+    <errorcode id="18">
+      <version>0</version>
+      <name>ERRORCODE_JOBS_COULD_NOT_BE_STOPPED</name>
+      <code>612</code>
+      <message>Some jobs could not be stopped. Please delete the jobs, or try again later.</message>
+    </errorcode>
+    <errorcode id="19">
+      <version>1</version>
+      <name>ERRORCODE_REST_CALL_IS_DISABLED</name>
+      <code>613</code>
+      <message>Rest call to '@uri' has been disabled, please check documentation.</message>
+    </errorcode>
+    <errorcode id="20">
+      <version>1</version>
+      <name>ERRORCODE_UNABLE_TO_CREATE_SYMLINK</name>
+      <code>614</code>
+      <message>Unable to create symbolic link ticket to file.</message>
+    </errorcode>
+    <errorcode id="21">
+      <version>0</version>
+      <name>ERRORCODE_ASSET_NOT_FOUND</name>
+      <code>700</code>
+      <message>MM - asset_id=@asset_id was not found in the database</message>
+    </errorcode>
+    <errorcode id="22">
+      <version>0</version>
+      <name>ERRORCODE_MEDIAFILE_NOT_FOUND</name>
+      <code>701</code>
+      <message>MM - mediafile_id=@mediafile_id was not found in the database</message>
+    </errorcode>
+    <errorcode id="23">
+      <version>0</version>
+      <name>ERRORCODE_INVALID_APP_ID</name>
+      <code>702</code>
+      <message>MM - invalid application id (app_id)</message>
+    </errorcode>
+    <errorcode id="24">
+      <version>0</version>
+      <name>ERRORCODE_INVALID_USER_ID</name>
+      <code>703</code>
+      <message>MM - the specified user_id (@user_id) is not the owner of this asset</message>
+    </errorcode>
+    <errorcode id="25">
+      <version>0</version>
+      <name>ERRORCODE_UNKNOWN_ERROR_SAVING_METADATA</name>
+      <code>704</code>
+      <message>MM - unknows error while saving metadata for asset_id @asset_id</message>
+    </errorcode>
+    <errorcode id="26">
+      <version>0</version>
+      <name>ERRORCODE_EMPTY_RESULT</name>
+      <code>705</code>
+      <message>MM - The query returned an empty result set (i.e. zero rows).</message>
+    </errorcode>
+    <errorcode id="27">
+      <version>0</version>
+      <name>ERRORCODE_COLLECTION_NOT_FOUND</name>
+      <code>706</code>
+      <message>MM - coll_id=@coll_id was not found in the database</message>
+    </errorcode>
+    <errorcode id="28">
+      <version>0</version>
+      <name>ERRORCODE_COLLECTION_ASSET_RELATION_ALREADY_EXISTS</name>
+      <code>707</code>
+      <message>MM - the asset is already present in the collection</message>
+    </errorcode>
+    <errorcode id="29">
+      <version>0</version>
+      <name>ERRORCODE_COLLECTION_ASSET_RELATION_NOT_FOUND</name>
+      <code>708</code>
+      <message>MM - the asset/collection relation was not found in the database</message>
+    </errorcode>
+    <errorcode id="30">
+      <version>0</version>
+      <name>ERRORCODE_ASSET_NOT_EMPTY</name>
+      <code>709</code>
+      <message>MM - there are still @mediafile_count mediafile(s) present in this asset.</message>
+    </errorcode>
+    <errorcode id="31">
+      <version>0</version>
+      <name>ERRORCODE_COLLECTION_NOT_EMPTY</name>
+      <code>710</code>
+      <message>MM - there are still @asset_count asset(s) present in this collection.</message>
+    </errorcode>
+    <errorcode id="32">
+      <version>0</version>
+      <name>ERRORCODE_ASSET_SUPPLEMENT_NOT_FOUND</name>
+      <code>711</code>
+      <message>MM - Supplement @supplement_id not found.</message>
+    </errorcode>
+    <errorcode id="33">
+      <version>0</version>
+      <name>ERRORCODE_WEBSERVICE_DISABLED</name>
+      <code>712</code>
+      <message>The webservices has been disabled</message>
+    </errorcode>
+    <errorcode id="34">
+      <version>0</version>
+      <name>ERRORCODE_INVALID_ASSET_MEDIAFILE_COMBINATION</name>
+      <code>714</code>
+      <message>MM - invalid asset/mediafile combination</message>
+    </errorcode>
+    <errorcode id="35">
+      <version>1</version>
+      <name>ERRORCODE_NO_CHANGES</name>
+      <code>715</code>
+      <message>Insufficient paramaters given, changes not saved</message>
+    </errorcode>
+    <errorcode id="36">
+      <version>1</version>
+      <name>ERRORCODE_INVALID_FAV_TYPE</name>
+      <code>716</code>
+      <message>Invalid favorite type (@type), valid favorite types; (@valid_types)</message>
+    </errorcode>
+    <errorcode id="37">
+      <version>1</version>
+      <name>ERRORCODE_INVALID_TIMESTAMP</name>
+      <code>717</code>
+      <message>@name is not a valid datetime or timestamp value, must be in format of YYYY-MM-DD HH:MM:DD / YYYY-MM-DD HH:MM / YYYY-MM-DD HH / YYYY-MM-DD / YYYY-MM / YYYY</message>
+    </errorcode>
+    <errorcode id="38">
+      <version>1</version>
+      <name>ERRORCODE_UNEXPECTED_ERROR</name>
+      <code>718</code>
+      <message>A unexpected program error / problem happened</message>
+    </errorcode>
+    <errorcode id="39">
+      <version>1</version>
+      <name>ERRORCODE_MISSING_TIMESTAMP</name>
+      <code>719</code>
+      <message>@name must have 2 dates separated with a |</message>
+    </errorcode>
+    <errorcode id="40">
+      <version>1</version>
+      <name>ERRORCODE_CANT_PLAY_MEDIAFILE</name>
+      <code>720</code>
+      <message>This mediafile (@mediafile_id) can not be played; @reason.</message>
+    </errorcode>
+    <errorcode id="41">
+      <version>1</version>
+      <name>ERRORCODE_CANT_TRANSCODE_MEDIAFILE</name>
+      <code>721</code>
+      <message>This mediafile (@mediafile_id) can not be transcoded; @reason.</message>
+    </errorcode>
+    <errorcode id="42">
+      <version>1</version>
+      <name>ERRORCODE_APP_DISABLED</name>
+      <code>722</code>
+      <message>This application has been disabled</message>
+    </errorcode>
+    <errorcode id="43">
+      <version>0</version>
+      <name>ERRORCODE_UNKNOWN_JOB</name>
+      <code>800</code>
+      <message>Jobs - unknown job specified</message>
+    </errorcode>
+    <errorcode id="44">
+      <version>0</version>
+      <name>ERRORCODE_VALIDATE_INVALID_TYPE</name>
+      <code>1000</code>
+      <message>VPX - invalid type specified: @type</message>
+    </errorcode>
+    <errorcode id="45">
+      <version>0</version>
+      <name>ERRORCODE_VALIDATE_INVALID_LENGTH_USE</name>
+      <code>1001</code>
+      <message>VPX - 'length' can not be used in combination with 'length_{min|max}'</message>
+    </errorcode>
+    <errorcode id="46">
+      <version>0</version>
+      <name>ERRORCODE_VALIDATE_REQUIRED_PARAMETER</name>
+      <code>1002</code>
+      <message>VPX - missing required parameter: @param (@type)</message>
+    </errorcode>
+    <errorcode id="47">
+      <version>0</version>
+      <name>ERRORCODE_VALIDATE_FAILED</name>
+      <code>1003</code>
+      <message>VPX - parameter validation failed: @param (@type)</message>
+    </errorcode>
+    <errorcode id="48">
+      <version>0</version>
+      <name>ERRORCODE_SORT_FIELD_ERROR</name>
+      <code>1004</code>
+      <message>VPX - sorting on '@field' is not allowed</message>
+    </errorcode>
+    <errorcode id="49">
+      <version>0</version>
+      <name>ERRORCODE_SORT_DIRECTION_ERROR</name>
+      <code>1005</code>
+      <message>VPX - invalid sort direction specified: '@sort_direction'. Use 'ASC' or 'DESC' instead.</message>
+    </errorcode>
+    <errorcode id="50">
+      <version>0</version>
+      <name>ERRORCODE_PP_INVALID_TIME</name>
+      <code>1006</code>
+      <message>PP - parameter validation failed: @param (@type) should be less than 87 400 000 msec (=24h)</message>
+    </errorcode>
+    <errorcode id="51">
+      <version>0</version>
+      <name>ERRORCODE_VALIDATE_INVALID_LANGUAGE</name>
+      <code>1007</code>
+      <message>VPX - 'language' parameter validation failed. Please use the 2-letter codes as defined in ISO 639-1.</message>
+    </errorcode>
+    <errorcode id="52">
+      <version>0</version>
+      <name>ERRORCODE_INVALID_SUPPLEMENT</name>
+      <code>1008</code>
+      <message>Invalid XML or maximum allowed size exceeded</message>
+    </errorcode>
+    <errorcode id="53">
+      <version>0</version>
+      <name>ERRORCODE_MIX_OF_URI_AND_FILE</name>
+      <code>1009</code>
+      <message>A single mediafile can't have a URI and a filename!</message>
+    </errorcode>
+    <errorcode id="54">
+      <version>0</version>
+      <name>ERRORCODE_CHANGE_URI_AND_FILE</name>
+      <code>1010</code>
+      <message>A URI-based mediafile can't be changed to a file-based mediafile and visa vers.</message>
+    </errorcode>
+    <errorcode id="55">
+      <version>0</version>
+      <name>ERRORCODE_CHANGE_OWNERSHIP_MISSING_PARAMETERS</name>
+      <code>1011</code>
+      <message>No 'old' or 'new' value present</message>
+    </errorcode>
+    <errorcode id="56">
+      <version>0</version>
+      <name>ERRORCODE_INSUFFICIENT_PARAMETERS</name>
+      <code>1012</code>
+      <message>Insufficient parameters given</message>
+    </errorcode>
+    <errorcode id="57">
+      <version>0</version>
+      <name>ERRORCODE_SUPPLEMENT_LIMIT_REACHED</name>
+      <code>1013</code>
+      <message>Maximum number of supplements for this assed reached (@max)</message>
+    </errorcode>
+    <errorcode id="58">
+      <version>0</version>
+      <name>ERRORCODE_MEDIAFILE_DOWNLOAD_DISABLED</name>
+      <code>1014</code>
+      <message>Download is disabled for this mediafile</message>
+    </errorcode>
+    <errorcode id="59">
+      <version>1</version>
+      <name>ERRORCODE_QUOTA_REACHED</name>
+      <code>1016</code>
+      <message>Quota limit reached. Allowed size: @quota MB. Used size: @used MB.</message>
+    </errorcode>
+    <errorcode id="60">
+      <version>1</version>
+      <name>ERRORCODE_HOSTNAME_ALREADY_IN_GROUP</name>
+      <code>1017</code>
+      <message>The hostname (@hostname) is already a member of the autorisation group (@group).</message>
+    </errorcode>
+    <errorcode id="61">
+      <version>1</version>
+      <name>ERRORCODE_HOSTNAME_NOT_FOUND</name>
+      <code>1018</code>
+      <message>The hostname (@hostname) was not found in the autorisation group (@group).</message>
+    </errorcode>
+    <errorcode id="62">
+      <version>1</version>
+      <name>ERRORCODE_GROUP_NOT_EMPTY</name>
+      <code>1019</code>
+      <message>There are still one or more hostnames present in this autorisation group (@group)</message>
+    </errorcode>
+    <errorcode id="63">
+      <version>1</version>
+      <name>ERRORCODE_VALIDATE_SEARCH_SYNTAX_FAILED</name>
+      <code>1020</code>
+      <message>Search parameters syntax contains a syntax error, please check your search_* parameters</message>
+    </errorcode>
+    <errorcode id="64">
+      <version>1</version>
+      <name>ERRORCODE_VALIDATE_SEARCH_SYNTAX_FAILED_UNEXPECTED_END</name>
+      <code>1021</code>
+      <message>Search parameters syntax ends abruptly</message>
+    </errorcode>
+    <errorcode id="65">
+      <version>1</version>
+      <name>ERRORCODE_VALIDATE_SEARCH_SYNTAX_FAILED_INVALID_FIELD</name>
+      <code>1022</code>
+      <message>Search parameters: you can't search on field '@field'</message>
+    </errorcode>
+    <errorcode id="66">
+      <version>1</version>
+      <name>ERRORCODE_METADATA_DEFINITION_NOT_EMPTY</name>
+      <code>1023</code>
+      <message>There are still one or more properties present in this property definition</message>
+    </errorcode>
+    <errorcode id="67">
+      <version>1</version>
+      <name>ERRORCODE_INVALID_METADATA_DEFINITION</name>
+      <code>1024</code>
+      <message>Invalid metadata definition</message>
+    </errorcode>
+    <errorcode id="68">
+      <version>1</version>
+      <name>ERRORCODE_HOSTNAME_TYPE_NO_MATCH_GROUP_TYPE</name>
+      <code>1025</code>
+      <message>The hostname (@hostname) with type (@hostname_type) must be the same type as the group (@group) with type (@group_type).</message>
+    </errorcode>
+    <errorcode id="69">
+      <version>1</version>
+      <name>ERRORCODE_AUT_GROUP_ALREADY_EXISTS</name>
+      <code>1026</code>
+      <message>The authorization group (@group) already exists.</message>
+    </errorcode>
+    <errorcode id="70">
+      <version>1</version>
+      <name>ERRORCODE_AUT_GROUP_NOT_FOUND</name>
+      <code>1027</code>
+      <message>The authorization group (@group) was not found.</message>
+    </errorcode>
+    <errorcode id="71">
+      <version>1</version>
+      <name>ERRORCODE_AUT_NAME_NOT_FOUND</name>
+      <code>1028</code>
+      <message>The authorization hostname (@hostname) was not found.</message>
+    </errorcode>
+    <errorcode id="72">
+      <version>1</version>
+      <name>ERRORCODE_INVALID_DATA_PARAMETER</name>
+      <code>1029</code>
+      <message>VPX - @parameter contains invalid data, expecting @data</message>
+    </errorcode>
+    <errorcode id="73">
+      <version>1</version>
+      <name>ERRORCODE_FTP_BATCH_NOT_FOUND</name>
+      <code>1030</code>
+      <message>The FTP batch id (@batch_id) was not found.</message>
+    </errorcode>
+    <errorcode id="74">
+      <version>1</version>
+      <name>ERRORCODE_CANT_RETYPE_GROUP_MUST_BE_EMPTY</name>
+      <code>1031</code>
+      <message>You can't change the type of group '@group', when it contains hostnames.</message>
+    </errorcode>
+    <errorcode id="75">
+      <version>1</version>
+      <name>ERRORCODE_CQL_EXCLUSIVE</name>
+      <code>1032</code>
+      <message>VPX - When you define a CQL search string, you can not specify any other search or order by parameter.</message>
+    </errorcode>
+    <errorcode id="76">
+      <version>1</version>
+      <name>ERRORCODE_CQL_ERROR</name>
+      <code>1033</code>
+      <message>VPX - CQL returned an error; @error.</message>
+    </errorcode>
+    <errorcode id="77">
+      <version>1</version>
+      <name>ERRORCODE_METADATA_DEFINITION_ALREADY_EXISTS</name>
+      <code>1034</code>
+      <message>VPX - Metadata definition already exists.</message>
+    </errorcode>
+    <errorcode id="78">
+      <version>0</version>
+      <name>ERRORCODE_RETRIEVING_JOBLIST</name>
+      <code>1100</code>
+      <message>VPX - error retrieving joblist from the database</message>
+    </errorcode>
+    <errorcode id="79">
+      <version>0</version>
+      <name>ERRORCODE_RETRIEVING_JOBSTATUS</name>
+      <code>1101</code>
+      <message>VPX - error retrieving jobstatus from the database</message>
+    </errorcode>
+    <errorcode id="80">
+      <version>0</version>
+      <name>ERRORCODE_WRITING_JOBSTATUS</name>
+      <code>1102</code>
+      <message>VPX - error writing jobstatus to the database</message>
+    </errorcode>
+    <errorcode id="81">
+      <version>0</version>
+      <name>ERRORCODE_WRITING_JOBPROGRESS</name>
+      <code>1103</code>
+      <message>VPX - error writing jobprogress to the database</message>
+    </errorcode>
+    <errorcode id="82">
+      <version>0</version>
+      <name>ERRORCODE_WRITING_UNKNOWN_JOBSTATUS</name>
+      <code>1104</code>
+      <message>VPX - error writing jobstatus to the database, an invalid status code was sent.</message>
+    </errorcode>
+    <errorcode id="83">
+      <version>0</version>
+      <name>ERRORCODE_RETRIEVING_TRANSCODELIST</name>
+      <code>1105</code>
+      <message>VPX - error retrieving transcodelist from the database.</message>
+    </errorcode>
+    <errorcode id="84">
+      <version>0</version>
+      <name>ERRORCODE_CREATING_JOB</name>
+      <code>1106</code>
+      <message>VPX - error creating a new job</message>
+    </errorcode>
+    <errorcode id="85">
+      <version>0</version>
+      <name>ERRORCODE_DELETING_JOB</name>
+      <code>1107</code>
+      <message>VPX - error deleting a job</message>
+    </errorcode>
+    <errorcode id="86">
+      <version>0</version>
+      <name>ERRORCODE_UNKNOWN_JOB_TYPE</name>
+      <code>1108</code>
+      <message>VPX - unknown job type</message>
+    </errorcode>
+    <errorcode id="87">
+      <version>0</version>
+      <name>ERRORCODE_RETRIEVING_TRANSCODE_PROFILE</name>
+      <code>1109</code>
+      <message>VPX - error retrieving transcode profile from the database.</message>
+    </errorcode>
+    <errorcode id="88">
+      <version>0</version>
+      <name>ERRORCODE_RETRIEVING_DEFAULT_TRANSCODE_PROFILE</name>
+      <code>1110</code>
+      <message>VPX - error retrieving default transcode profile.</message>
+    </errorcode>
+    <errorcode id="89">
+      <version>0</version>
+      <name>ERRORCODE_NO_DEFAULT_TRANSCODE_PROFILE</name>
+      <code>1111</code>
+      <message>VPX - no default transcode profile specified.</message>
+    </errorcode>
+    <errorcode id="90">
+      <version>0</version>
+      <name>ERRORCODE_UNKNOWN_TRANSCODE_PROFILE</name>
+      <code>1112</code>
+      <message>VPX - unknown transcode profile.</message>
+    </errorcode>
+    <errorcode id="91">
+      <version>0</version>
+      <name>ERRORCODE_NO_TRANSCODE_PARAMETERS</name>
+      <code>1113</code>
+      <message>VPX - no transcoding parameters provided.</message>
+    </errorcode>
+    <errorcode id="92">
+      <version>0</version>
+      <name>ERRORCODE_JOB_TRANSCODE_PARAMETER_NOT_FOUND</name>
+      <code>1114</code>
+      <message>VPX - transcoding parameter @key is unknown.</message>
+    </errorcode>
+    <errorcode id="93">
+      <version>0</version>
+      <name>ERRORCODE_JOB_TRANSCODE_PARAMETER_TOO_LOW</name>
+      <code>1115</code>
+      <message>VPX - transcoding parameter @key has a value of @value, which is lower then the minimum @min_value.</message>
+    </errorcode>
+    <errorcode id="94">
+      <version>0</version>
+      <name>ERRORCODE_JOB_TRANSCODE_PARAMETER_TOO_HIGH</name>
+      <code>1116</code>
+      <message>VPX - transcoding parameter @key has a value of @value, which is higher then the maximum @max_value.</message>
+    </errorcode>
+    <errorcode id="95">
+      <version>0</version>
+      <name>ERRORCODE_JOB_TRANSCODE_PARAMETER_WRONG_VALUE</name>
+      <code>1117</code>
+      <message>VPX - transcoding parameter @key has an invalid value of @value.</message>
+    </errorcode>
+    <errorcode id="96">
+      <version>0</version>
+      <name>ERRORCODE_JOB_TRANSCODE_PARAMETER_NOT_FLOAT</name>
+      <code>1118</code>
+      <message>VPX - transcoding parameter @key has an invalid value of @value.</message>
+    </errorcode>
+    <errorcode id="97">
+      <version>0</version>
+      <name>ERRORCODE_JOB_TRANSCODE_PARAMETER_COMBINATION</name>
+      <code>1119</code>
+      <message>VPX - transcoding parameter combination of tool @tool and file extension @file_extension does not exist.</message>
+    </errorcode>
+    <errorcode id="98">
+      <version>0</version>
+      <name>ERRORCODE_JOB_TRANSCODE_TIMEOUT</name>
+      <code>1120</code>
+      <message>VPX - error, transcode job has exceeded the max transcode job runtime (@timeout s)</message>
+    </errorcode>
+    <errorcode id="99">
+      <version>0</version>
+      <name>ERRORCODE_CREATING_TRANSCODE_JOB</name>
+      <code>1121</code>
+      <message>VPX - error creating a transcode job.</message>
+    </errorcode>
+    <errorcode id="100">
+      <version>0</version>
+      <name>ERRORCODE_JOB_NOT_FOUND</name>
+      <code>1122</code>
+      <message>VPX - job_id=@job_id was not found in the database</message>
+    </errorcode>
+    <errorcode id="101">
+      <version>0</version>
+      <name>ERRORCODE_JOB_ASSET_NOT_FOUND</name>
+      <code>1123</code>
+      <message>VPX - asset_id=@asset_id was not found in the database</message>
+    </errorcode>
+    <errorcode id="102">
+      <version>0</version>
+      <name>ERRORCODE_CREATING_UPLOAD_JOB</name>
+      <code>1124</code>
+      <message>VPX - error creating a upload job</message>
+    </errorcode>
+    <errorcode id="103">
+      <version>0</version>
+      <name>ERRORCODE_CREATING_ANALYSE_JOB</name>
+      <code>1125</code>
+      <message>VPX - error creating an analyse job</message>
+    </errorcode>
+    <errorcode id="104">
+      <version>0</version>
+      <name>ERRORCODE_JOB_MEDIAFILE_NOT_FOUND</name>
+      <code>1126</code>
+      <message>VPX - mediafile_id=@mediafile_id was not found in the database</message>
+    </errorcode>
+    <errorcode id="105">
+      <version>0</version>
+      <name>ERRORCODE_JOB_USER_NOT_FOUND</name>
+      <code>1127</code>
+      <message>VPX - user_id=@user_id was not found in the database</message>
+    </errorcode>
+    <errorcode id="106">
+      <version>0</version>
+      <name>ERRORCODE_JOB_COULD_NOT_BE_REMOVED</name>
+      <code>1128</code>
+      <message>VPX - Job kon niet worden verwijderd (job_id=@job_id)</message>
+    </errorcode>
+    <errorcode id="107">
+      <version>0</version>
+      <name>ERRORCODE_JOB_FRAMETIME_GREATER_THEN_DURATION</name>
+      <code>1129</code>
+      <message>chosen frametime is higher dan duration of the mediafile.</message>
+    </errorcode>
+    <errorcode id="108">
+      <version>0</version>
+      <name>ERRORCODE_RETRIEVING_ASSET</name>
+      <code>1130</code>
+      <message>VPX - error retrieving the asset from database</message>
+    </errorcode>
+    <errorcode id="109">
+      <version>1</version>
+      <name>ERRORCODE_JOB_CANCEL_NOT_ALLOWED</name>
+      <code>1131</code>
+      <message>VPX - deleting of job not allowed</message>
+    </errorcode>
+    <errorcode id="110">
+      <version>1</version>
+      <name>ERRORCODE_JOB_CREATE_NOT_ALLOWED</name>
+      <code>1132</code>
+      <message>VPX - creation of job is not allowed</message>
+    </errorcode>
+    <errorcode id="111">
+      <version>0</version>
+      <name>ERRORCODE_UPLOAD_ALREADY_EXISTS</name>
+      <code>1140</code>
+      <message>VPX - a upload is already active for this asset_id</message>
+    </errorcode>
+    <errorcode id="112">
+      <version>0</version>
+      <name>ERRORCODE_STILL_NOT_FOUND</name>
+      <code>1150</code>
+      <message>MM - could not find still for asset_id=@asset_id.</message>
+    </errorcode>
+    <errorcode id="113">
+      <version>0</version>
+      <name>ERRORCODE_RETRIEVING_SERVERLIST</name>
+      <code>1201</code>
+      <message>JH - error retrieving serverlist</message>
+    </errorcode>
+    <errorcode id="114">
+      <version>0</version>
+      <name>ERRORCODE_RETRIEVING_AVAILABLE_SERVERLIST</name>
+      <code>1202</code>
+      <message>JH - error retrieving server-job-list</message>
+    </errorcode>
+    <errorcode id="115">
+      <version>0</version>
+      <name>ERRORCODE_STARTING_JOB_FAILED</name>
+      <code>1301</code>
+      <message>Jobserver - starting of job failed</message>
+    </errorcode>
+    <errorcode id="116">
+      <version>0</version>
+      <name>ERRORCODE_RETRIEVING_SERVER_JOBLIST</name>
+      <code>1302</code>
+      <message>Jobserver - error retrieving jobs on server</message>
+    </errorcode>
+    <errorcode id="117">
+      <version>0</version>
+      <name>ERRORCODE_STUB_SERVER_RETRIEVING_JOB_FOR_EXECUTION</name>
+      <code>1401</code>
+      <message>Jobserver - error retrieving 1 job for execution</message>
+    </errorcode>
+    <errorcode id="118">
+      <version>0</version>
+      <name>ERRORCODE_INVALID_UPLOAD_TICKET</name>
+      <code>1500</code>
+      <message>Upload - invalid upload ticket</message>
+    </errorcode>
+    <errorcode id="119">
+      <version>0</version>
+      <name>ERRORCODE_CREATE_MEDIAFILE_DURING_UPLOAD</name>
+      <code>1501</code>
+      <message>Upload - couldn't create mediafile during upload</message>
+    </errorcode>
+    <errorcode id="120">
+      <version>0</version>
+      <name>ERRORCODE_CANNOT_COPY_MEDIAFILE</name>
+      <code>1502</code>
+      <message>Upload - couldn't copy mediafile to final destination</message>
+    </errorcode>
+    <errorcode id="121">
+      <version>1</version>
+      <name>ERRORCODE_NOT_ENOUGH_FREE_QUOTA</name>
+      <code>1503</code>
+      <message>Upload failed because of too less free quota.</message>
+    </errorcode>
+    <errorcode id="122">
+      <version>0</version>
+      <name>ERRORCODE_DBUS_PROTOCOL_ERROR</name>
+      <code>1600</code>
+      <message>Authenticate - identification process</message>
+    </errorcode>
+    <errorcode id="123">
+      <version>0</version>
+      <name>ERRORCODE_ACCESS_DENIED</name>
+      <code>1601</code>
+      <message>Authenticate - access denied</message>
+    </errorcode>
+    <errorcode id="124">
+      <version>0</version>
+      <name>ERRORCODE_ACCESS_DENIED_INVALID_APP_ID</name>
+      <code>1602</code>
+      <message>Authenticate - access denied (invalid app_id)</message>
+    </errorcode>
+    <errorcode id="125">
+      <version>0</version>
+      <name>ERRORCODE_FTP_ERROR</name>
+      <code>1700</code>
+      <message>FTP users - error</message>
+    </errorcode>
+    <errorcode id="126">
+      <version>0</version>
+      <name>ERRORCODE_FTP_CREDENTIAL_LENGTH</name>
+      <code>1701</code>
+      <message>FTP users - credentials not of minium length</message>
+    </errorcode>
+    <errorcode id="127">
+      <version>0</version>
+      <name>ERRORCODE_FTP_UNKNOWN_USER</name>
+      <code>1702</code>
+      <message>FTP users - unknown user</message>
+    </errorcode>
+    <errorcode id="128">
+      <version>0</version>
+      <name>ERRORCODE_FTP_USER_EXISTS</name>
+      <code>1703</code>
+      <message>User already exists</message>
+    </errorcode>
+    <errorcode id="129">
+      <version>0</version>
+      <name>ERRORCODE_NOT_AUTHORIZED</name>
+      <code>1800</code>
+      <message>Action is not allowed, not authorized</message>
+    </errorcode>
+    <errorcode id="130">
+      <version>0</version>
+      <name>ERRORCODE_ACL_ERROR_AUTHORIZED</name>
+      <code>1801</code>
+      <message/>
+    </errorcode>
+    <errorcode id="131">
+      <version>0</version>
+      <name>ERRORCODE_USERMAN_INVALID_GROUP</name>
+      <code>1900</code>
+      <message>Invalid group name</message>
+    </errorcode>
+    <errorcode id="132">
+      <version>0</version>
+      <name>ERRORCODE_USERMAN_GROUP_NOT_EMPTY</name>
+      <code>1901</code>
+      <message>The group is not empty</message>
+    </errorcode>
+    <errorcode id="133">
+      <version>0</version>
+      <name>ERRORCODE_USERMAN_INVALID_USER</name>
+      <code>1902</code>
+      <message>Invalid username</message>
+    </errorcode>
+    <errorcode id="134">
+      <version>0</version>
+      <name>ERRORCODE_USERMAN_GROUP_EXISTS</name>
+      <code>1903</code>
+      <message>Group already exists </message>
+    </errorcode>
+    <errorcode id="135">
+      <version>0</version>
+      <name>ERRORCODE_USERMAN_USER_EXISTS</name>
+      <code>1904</code>
+      <message>User already exists</message>
+    </errorcode>
+  </items>
+</response>
